@@ -1,0 +1,33 @@
+<h4>Add Employee Records</h4>
+<hr />
+<div class="container text-centered">
+    <form #myform="ngForm" (ngSubmit)=Addemp(myform)>
+        <!-- <div class="form-group">
+          <label for="EmployeeId">ID</label>
+          <input disabled type="number" class="form-control" id="EmployeeId" name="Id" place ngModel>
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> 
+        </div>-->
+        <div class="form-group">
+          <label for="EmployeeName">Name</label>
+          <input type="text" class="form-control" id="EmployeeName" name="name" ngModel>
+        </div>
+        <div class="form-group">
+          <label for="EmployeeCity">City</label>
+          <input type="text" class="form-control" id="EmployeeCity" name="address" ngModel>
+        </div>
+        <div class="form-group">
+          <label for="EmployeeContact">Contact</label>
+          <input type="tel" class="form-control" id="EmployeeContact"name="phone_number" ngModel>
+        </div>
+        <div class="form-group">
+          <label for="EmployeeEmail">Email</label>
+          <input type="email" class="form-control" id="EmployeeEmail" name="email" ngModel>
+        </div>
+        <div class="form-group">
+          <label for="EmployeeSalary">Salary</label>
+          <input type="number" class="form-control" id="EmployeeSalary" name="salary" ngModel>
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+</div>
